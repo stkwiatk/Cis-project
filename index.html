@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuiteCowSki Portfolio</title>
+  <meta name="description" content="Personal portfolio of Sammie Kwiatkowski: projects, work, and contact." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="brand">QuiteCowSki</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home" class="hero">
+    <div class="hero-photo" aria-label="Portrait placeholder">
+      <img src="assets/img-5693-2_orig.jpg" alt="Headshot of Sammie" loading="lazy" width="800" height="800">
+    </div>
+    <div class="hero-text">
+      <h1>Hi, I'm <span>Sammie!</span></h1>
+      <p>
+        I am committed to communicating with businesses in order to translate their services to a design. With influence from different media and design styles, I can fine tune my expertise to fall within the lines of customers' needs. Furthermore, I can use my life experiences to inspire and relate to businesses who have yet to generate a large audience.
+      </p>
+      <div class="cta-row">
+        <button class="btn btn-primary" onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'})">View Projects</button>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+  </main>
+
+  <section id="projects" class="section">
+    <div class="section-header">
+      <h2>Featured Projects</h2>
+      <p>A quick selection of things I've built or collaborated on recently.</p>
+    </div>
+    <div class="projects-grid">
+      <article class="project-card">
+        <div class="project-media" aria-label="Mood app screenshot">
+          <img src="assets/mood.png" alt="Mood app screenshot" loading="lazy" width="800" height="600">
+        </div>
+        <div class="project-body">
+          <h3>Mood</h3>
+          <p>Clickable UX prototype for concert ticketing app</p>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-media" aria-label="Chez Nous branding">
+          <img src="assets/cheznous.png" alt="Chez Nous branding and packaging" loading="lazy" width="800" height="600">
+        </div>
+        <div class="project-body">
+          <h3>Chez Nous</h3>
+          <p>Revitalizing college dining with multicultural flair</p>
+        </div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-media" aria-label="Monterey Smile Center website">
+          <img src="assets/smilecenterhome.png" alt="Monterey Smile Center website screenshot" loading="lazy" width="800" height="600">
+        </div>
+        <div class="project-body">
+          <h3>Monterey Smile Center</h3>
+          <p>Dental office website with carousel and product promotion</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="section-header">
+      <h2>Contact</h2>
+      <p>Reach out for collaboration, consulting, or just to say hi.</p>
+    </div>
+    <p>Coming soon</p>
+  </section>
+
+  <footer>
+    <div class="inner">
+      <p>© <span id="year"></span> Sammie Kwiatkowski. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
