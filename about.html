@@ -6,6 +6,29 @@
   <title>QuiteCowSki Portfolio | About</title>
   <meta name="description" content="Page with biographical details and skill descriptions" />
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-extra.css">
+  <style>
+    /* Gallery: uniform, responsive image grid */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      align-items: start;
+    }
+    .gallery figure { margin: 0; }
+    .gallery img {
+      width: 100%;
+      aspect-ratio: 4 / 3;
+      object-fit: cover;
+      display: block;
+      border-radius: 8px;
+      background: #f3f4f6;
+    }
+    .gallery figcaption { margin-top: .5rem; font-size: .95rem; color: #444; }
+    @media (max-width: 480px) {
+      .gallery { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 <body>
   <header>
