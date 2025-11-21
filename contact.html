@@ -6,6 +6,7 @@
   <title>QuiteCowSki Portfolio | Contact</title>
   <meta name="description" content="Contact Sammie  for design, collaboration, or consulting." />
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-extra.css">
 </head>
 <body>
   <header>
@@ -25,11 +26,11 @@
     </nav>
   </header>
 
-  <main class="contact-container">
+  <main class="contact-container" id="main" tabindex="-1">
     <h1>Contact</h1>
     <p>Use the form below to reach out about collaboration, design work, or questions.</p>
 
-    <form id="contact-form" action="#" method="post" novalidate>
+    <form id="contact-form" action="#" method="post" novalidate aria-describedby="note">
       <div class="row">
         <div>
           <label for="name">Full name</label>
@@ -74,10 +75,21 @@
 
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-    document.getElementById('contact-form').addEventListener('submit', function (e) {
+    const form = document.getElementById('contact-form');
+    const status = document.getElementById('form-status');
+    form.addEventListener('submit', function (e) {
       e.preventDefault();
-      var status = document.getElementById('form-status');
+      // Basic front-end validation feedback
+      const invalid = form.querySelector(':invalid');
+      if (invalid) {
+        status.textContent = 'Please complete required fields before sending.';
+        status.style.color = '#dc2626';
+        status.style.display = 'block';
+        invalid.focus();
+        return;
+      }
       status.textContent = 'Thanks — your message is ready (not actually sent).';
+      status.style.color = '';
       status.style.display = 'block';
     });
   </script>
