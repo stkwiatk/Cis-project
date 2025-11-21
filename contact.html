@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuiteCowSki Portfolio | Contact</title>
+  <meta name="description" content="Contact Sammie  for design, collaboration, or consulting." />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="brand">QuiteCowSki</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact-container">
+    <h1>Contact</h1>
+    <p>Use the form below to reach out about collaboration, design work, or questions.</p>
+
+    <form id="contact-form" action="#" method="post" novalidate>
+      <div class="row">
+        <div>
+          <label for="name">Full name</label>
+          <input id="name" name="name" type="text" placeholder="Your full name" required>
+        </div>
+        <div>
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" placeholder="you@example.com" required>
+        </div>
+      </div>
+
+      <div>
+        <label for="subject">Subject</label>
+        <input id="subject" name="subject" type="text" placeholder="Short summary" required>
+      </div>
+
+      <div>
+        <label for="message">Message</label>
+        <textarea id="message" name="message" placeholder="Tell me about your project or question" required></textarea>
+      </div>
+
+      <div>
+        <label for="phone">Phone (optional)</label>
+        <input id="phone" name="phone" type="tel" placeholder="(555) 555-5555">
+      </div>
+
+      <div class="btn-row full">
+        <button type="submit" class="btn btn-primary">Send message</button>
+        <button type="reset" class="btn">Reset</button>
+        <div id="form-status" class="success" role="status" aria-live="polite">Message ready to send.</div>
+      </div>
+    </form>
+
+    <p class="visually-hidden" id="note">Note: This form uses action="#" and will not submit to a server.</p>
+  </main>
+
+  <footer>
+    <div class="inner">
+      <p>© <span id="year"></span> Sammie Kwiatkowski. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var status = document.getElementById('form-status');
+      status.textContent = 'Thanks — your message is ready (not actually sent).';
+      status.style.display = 'block';
+    });
+  </script>
+</body>
+</html>

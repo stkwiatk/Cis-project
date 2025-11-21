@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuiteCowSki Portfolio | About</title>
+  <meta name="description" content="Page with biographical details and skill descriptions" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="brand">QuiteCowSki</div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section id="about" class="section">
+
+</section>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header>
+    <h1>About Me</h1>
+  </header>
+  <main id="main" tabindex="-1">
+    <section class="intro" aria-labelledby="about-heading">
+      <h2 id="about-heading" class="visually-hidden" style="position:absolute;left:-999px;">My Story</h2>
+      <p>
+        Though I have only just begun my professional design experience, my interest in graphic and web design can be traced back to middle school. I served as the Video Bulletin (morning announcements) editor in my 8th grade year. The thought of making something the whole school would cherish filled me with great joy. Naturally, I wanted to do something similar once high school came around. Sure enough, I joined the Yearbook team and spent three straight years there. That experience was my first sojourn into the world of graphic design, and my exploration only increased after a skiing accident in my junior year led me to make little designs for myself as comfort.
+      </p>
+      <p>
+        When it came time to apply for college, I elected Graphic Design as my major, choosing to attend Arizona State. However, the ongoing brain warp that was the pandemic, combined with a dissatisfaction with the things I was learning, rendered Graphic Design to not be a good fit. Consequently, I switched to Graphic Information Technology ahead of my sophomore year in 2021. The switch ended up working in my favor, and I received a Bachelor's degree in Spring 2024. I will finish my Master's degree program in Spring 2026, after which time I want to remain in Arizona indefinitely.
+      </p>
+      <p>
+        Being on the autism spectrum, I bring a somewhat unheard of atmosphere to the graphic and web design industries. In my lived experience, I have cycled through several major interests. Because very specialized interests are a way to get to know people like me, I can really get to the heart of customers' needs by actively incorporating their interests into my work. At the heart of my practice is disproving the stigma that has surrounded curious people like me, as many people insist we conform to the norms - to which I assert, <em>there is no "normal."</em>
+      </p>
+      <h2>- Sammie</h2>
+    </section>
+
+    <section class="gallery" aria-labelledby="image-gallery-heading">
+      <h2 id="image-gallery-heading" class="visually-hidden" style="position:absolute;left:-999px;">Image Gallery</h2>
+      <figure>
+        <img src="assets/ordinary_orig.png" alt="Text design reading 'Goodbye ordinary'" loading="lazy" />
+        <figcaption>Collaborative planning drives our mission forward.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/hippie-music.png" alt="Digital art of a vinyl record with text 'Old lover hippie music'" loading="lazy" />
+        <figcaption>A diverse, curious team committed to excellence.</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/angkor-wat-my-boys_orig.png" alt="Abstract horizon representing future innovation" loading="lazy" />
+        <figcaption>Focused on sustainable, user-centered innovation.</figcaption>
+      </figure>
+    </section>
+    
+    <section class="table-section" aria-labelledby="table-heading">
+      <h2 id="table-heading" class="visually-hidden" style="position:absolute;left:-999px;">Key Facts Table</h2>
+      <table class="data-table" aria-describedby="table-caption">
+        <caption id="table-caption">Important Skills</caption>
+        <thead>
+          <tr>
+            <th scope="col">Skill</th>
+            <th scope="col">Category</th>
+            <th scope="col">Use cases</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Adobe software: InDesign and Illustrator</td>
+            <td>Program expertise</td>
+            <td>Making design elements such as illustrations, publications, and vectors.</td>
+          </tr>
+          <tr>
+            <td>Figma</td>
+            <td>UI/UX</td>
+            <td>Make user interface designs and clickable prototypes.</td>
+          </tr>
+          <tr>
+            <td>Intermediate Spanish proficiency</td>
+            <td>Language</td>
+            <td>Opportunities to reach out and network with multilingual communities.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <footer>
+    <div class="inner">
+      <p>© <span id="year"></span> Sammie Kwiatkowski. All rights reserved.</p>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
