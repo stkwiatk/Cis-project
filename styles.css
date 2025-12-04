@@ -201,6 +201,22 @@ nav a:hover::after {
     .tags { display:flex; flex-wrap:wrap; gap:.4rem; margin-top:.35rem; }
     .tag { background:#11202a; color: var(--primary); border: 1px solid rgba(139,213,231,0.25); font-size:.65rem; letter-spacing:.5px; padding:.35rem .55rem; border-radius:40px; text-transform:uppercase; opacity:.9; }
 
+    /* Small media grids for additional project images */
+    .project-media-grid {
+      margin-top: 0.75rem;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 0.75rem;
+    }
+
+    .project-media-grid img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
     /* Contact tweaks (cleaned inline styles) */
     #contact.section { padding-top: 0; }
     #contact .section-header { margin-bottom: 1.25rem; }
