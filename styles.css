@@ -219,14 +219,6 @@ nav a:hover::after {
       .project-card { min-height:250px; }
     }
 
-    @media (min-width:768px){
-      .project-card { flex-direction:row; }
-      .project-media { flex:0 0 45%; }
-      .project-media img,
-      .project-media video { width:100%; height:100%; object-fit:cover; }
-      .project-body { flex:1 1 auto; }
-    }
-
     /* Stacked media: show multiple assets (e.g., image + video) together */
     .project-media--stack {
       flex-direction: column;
