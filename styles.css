@@ -1,12 +1,10 @@
 :root {
-      /* base palette from screenshot */
       --text: #e5f4fa;
       --background: #051117;
       --primary: #8bd5e7;
       --secondary: #881d53;
       --accent: #d76641;
 
-      /* surface + tokens */
       --surface: #0b1a22;
       --muted: #1a2630;
       --radius: 14px;
@@ -15,12 +13,10 @@
       --shadow-2: 0 0 0 6px rgba(255,255,255,0.06);
       --gradient: linear-gradient(135deg, var(--primary), var(--accent) 55%, var(--secondary));
 
-      /* system hints */
       color-scheme: dark;
       accent-color: var(--primary);
     }
 
-    /* base reset */
     *,*::before,*::after { box-sizing: border-box; }
     body {
       margin: 0;

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>QuiteCowSki Portfolio | Projects</title>
+  <meta name="description" content="Graphic design and UX projects by Sammie, with visuals, process descriptions, and live links for hiring managers evaluating portfolio work." />
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles-extra.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header>
+    <nav>
+      <div class="brand">
+        <a href="index.html">
+          <img src="assets/logo-dark-ver.png" alt="QuiteCowSki logo" class="logo" />
+          <span class="brand-text">QuiteCowSki</span>
+        </a>
+      </div>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="section projects-page page-main" tabindex="-1">
+    <header class="section-header">
+      <h1>Projects</h1>
+      <p>A selection of recent work. Each project includes visuals and a short description.</p>
+    </header>
+
+    <section class="projects-grid" aria-label="Project list">
+      <!-- Project 1 -->
+      <article class="project-card">
+        <div class="project-media">
+          <img src="assets/mood1.png" alt="Screens from the Mood concert ticketing app prototype" loading="lazy" width="800" height="600">
+        </div>
+        <div class="project-body">
+          <h2 class="project-title">Mood</h2>
+          <p class="project-description">
+            Mood Events is a UX design prototype for a mobile app focused on concerts and live music events in the metro Phoenix area. The concept was developed with the goal of creating an intuitive, visually engaging platform that helps users discover upcoming shows, explore artists and venues, and customize their concert-going experience based on date, genre, and location.
+This project involved the complete development of interactive app prototypes. Special attention was given to user flow, interface design, and accessibility, ensuring a smooth and enjoyable experience for users of all levels of tech familiarity. Key features included personalized event recommendations, mood-based filtering, and real-time updates on ticket availability and venue capacity.
+​Through user research and iterative testing, the prototype evolved to prioritize clean navigation, visually rich artist and event pages, and minimalistic but expressive design elements. The end result was a fully functional prototype that could serve as the foundation for a future mobile app, ready for further development and implementation.
+          </p>
+          <p>
+            <a class="btn" href="https://www.figma.com/proto/ERKn8r8duokSeWSrXJVj7I/mood-final-proto?node-id=0-1&t=MS0q96I2JwIHHyIP-1" target="_blank" rel="noopener noreferrer">Open Figma prototype</a>
+          </p>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card">
+        <div class="project-media">
+          <img src="assets/cheznous.png" alt="Branding and packaging mockups for Chez Nous" loading="lazy" width="800" height="600">
+        </div>
+        <div class="project-body">
+          <h2 class="project-title">Chez Nous</h2>
+          <p class="project-description">
+             Chez Nous is a fast-food restaurant concept designed to bring affordable, high-quality alternatives to standard campus dining, offering thoughtfully crafted multicultural dishes to college towns nationwide.
+This project involved the creation of a branded menu and a unique meal kit, referred to as a “Mix” kit, to meet the demand for flavorful and cost-effective dining options in and around college campuses. The result was a brand experience that combined authenticity, personality, and energy, providing students with an enticing and accessible way to enjoy quality food.
+​The visual identity leaned into retro-inspired branding, drawing from the bold, vibrant aesthetics of the 1970s and 1980s. The typography echoed this playful nostalgia, while hand-drawn doodles added an authentic, approachable feel that reinforced the brand’s values. The decision to call meals “Mixes” emphasized the cultural fusion at the heart of the menu, embracing the diversity and mingling of flavors central to the concept.
+          </p>
+          <p>
+            <a class="btn" href="https://www.behance.net/gallery/196768763/Chez-Nous-%28GIT-480%29" target="_blank" rel="noopener noreferrer">View project on Behance</a>
+          </p>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card">
+        <div class="project-media">
+          <img src="assets/smilecenterhome.png" alt="Homepage of the Monterey Smile Center website" loading="lazy" width="800" height="600">
+          <video controls muted loop playsinline width="800" height="600">
+            <source src="assets/website loop (1).mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="project-body">
+          <h2 class="project-title">Monterey Smile Center</h2>
+          <p class="project-description">
+            Monterey Smile Center is a dental office in Monterey, California, operated by a husband and wife. The client’s website was long overdue for a redesign, having gone untouched for several years. User testing highlighted key gaps in functionality, including the absence of a review page and an appointment scheduling portal. At the same time, the practice was introducing Bioclear services, which needed prominent promotion on the site. To enhance the visual appeal, I incorporated custom video footage of the Monterey area for the homepage. Additionally, I worked closely with both dentists to craft detailed biographies for the entire staff, ensuring the site felt both informative and personal. Attached above is the video loop that I filmed for the website homepage.
+          </p>
+          <p>
+            <a class="btn" href="https://www.montereysmilecenter.com/" target="_blank" rel="noopener noreferrer">Check out the site here!</a>
+          </p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="inner">
+      <p>© <span id="year"></span> Sammie Kwiatkowski. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
